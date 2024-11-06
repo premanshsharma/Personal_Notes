@@ -6,24 +6,11 @@
   - Hierarchical
   - Network
 - Data Models
-  - Relational Model
-    - Tables (Relations)
-    - Attributes (Column)
-    - Tuples (Rows)
-  - Hierarchical Model
-    - Parent-child Relationships
-  - Network Model
-    - Many to Many Relationships
-    - One to Many Relationships
-    - Many to one Relationships
-    - one to one Relationships
-  - Object-Oriented Model
-    - Objects, Classes, Inheritance
-  - NoSQL Models
-    - Documents-Based
-    - Key-Value
-    - Column-Family
-    - Graph-Based
+  - Relational Model: Tables (Relations), Attributes (Column), Tuples (Rows)
+  - Hierarchical Model: Parent-child Relationships
+  - Network Model: Many to Many Relationships, One to Many Relationships, Many to one Relationships, one to one Relationships
+  - Object-Oriented Model: Objects, Classes, Inheritance
+  - NoSQL Models: Documents-Based, Key-Value, Column-Family, Graph-Based
 - Database Design
   - Schema
   - ER Model (Entity-Relationship)
@@ -100,9 +87,20 @@
 - Hierarchical
 - Network
 ## 1.2 Relational
-- 
 
 
-
+# 3. Database Design
+- Database design is the process of defining how data will be stored, organized, and managed in a database. It ensures that data is structured efficiently and can be accessed and manipulated effectively.
+## Mind Map
+- Schema
+- ER Model (Entity-Relationship)
+- Normalization
+- Denormalization
+- Keys
+  - Primary Key
+  - Foreign Key
+  - Composite Key
+## 3.1 Schema
+- **Definition:** A schema is the blueprint or structure of a database. It defines the tables, fields (columns), and relationships between them.
 
 
