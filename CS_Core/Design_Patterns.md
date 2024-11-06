@@ -1,1 +1,26 @@
-
+# Mind Map
+- 1. Creational Patterns
+  - 1. Singleton
+  - 2. Factory Method
+  - 3. Abstract Factory
+  - 4. Builder
+  - 5. Prototype
+- Structural Patterns
+  - Adapter
+  - Bridge
+  - CompositeDecorator
+  - Facade
+  - Flyweight
+  - Proxy
+- Behavioral Patterns
+  - Chain of responsibility
+  - Command
+  - Interpreter
+  - Iterator
+  - Mediator
+  - Memento
+  - Observer
+  - State
+  - Strategy
+  - Template Method
+  - Visitor
