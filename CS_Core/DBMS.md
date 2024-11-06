@@ -92,8 +92,15 @@
     - Column Family Store (Cassandra)
     - Graph Database (Neo4j)
 
-
-
+# 1. Types of DBMS
+## 1.1 Mind Map
+- Relational
+- NoSQL
+- Object-Oriented
+- Hierarchical
+- Network
+## 1.2 Relational
+- 
 
 
 
