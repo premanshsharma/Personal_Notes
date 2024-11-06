@@ -1,1 +1,70 @@
-
+# Mind Map
+- Types of OS
+  - Batch OS
+  - Time-Sharing OS
+  - Distributed OS
+  - Real-Time OS
+  - Embedded OS
+  - Mobile OS
+- Process Management
+  - State
+    - New, Ready, Running, Waiting, Terminated
+  - Process
+  - Scheduling
+    - Algorithms: FCFS, SJF, Round Robin, Priority Scheduling
+    - Multithreading
+    - Context switching
+  - Process synchronization
+    - Critical section
+    - semaphores
+    - mutex
+    - deadlock
+      - Detection
+      - Prevention
+      - Avoidance
+      - Conditions:
+        - Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait.
+      - Handling Techniques:
+        - Prevention, Avoidance (Banker’s Algorithm), Detection, Recovery.
+- Memory Management
+  - RAM and Virtual Memory
+  - Memory Allocation
+    - Contiguous vs Non-contiguous
+    - Paging
+    - Segmentation
+  - Swapping
+  - Fragmentation
+  - Page Replacement Algorithm
+    - FIFO, LRU, Optimal
+- File Management
+  - File System
+  - Directory Structure
+    - Single level
+    - Two level
+    - Tree structures
+  - File Operations
+  - File Allocation
+    - Contiguous Allocation
+    - Linked Allocation
+    - Indexed Allocation
+- I/O Management
+  - Device Drivers: Interface between OS and hardware.
+  - I/O Scheduling: Determines the order of I/O requests.
+  - Buffering: Temporary storage for I/O operations.
+  - Spooling: Overlapping I/O and CPU processing.
+- Storage Management
+  - Primary Storage: RAM.
+  - Secondary Storage: Hard Disk, SSD.
+  - Tertiary Storage: External drives, cloud storage.
+  - Disk Scheduling Algorithms:
+    - FCFS, SSTF, SCAN, C-SCAN.
+- Security and Protection
+  - User Authentication: Passwords, biometrics.
+  - Access Control: Who can access what?
+  - Encryption: Data protection through encoding.
+  - Security Threats: Viruses, Malware, Trojan Horses.
+- Virtualization
+  - Virtual Machines: Running multiple OS on one physical machine.
+  - Hypervisors:
+    - Type 1: Runs directly on hardware.
+    - Type 2: Runs on a host OS.
