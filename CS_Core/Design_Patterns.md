@@ -1,18 +1,19 @@
+- Total Design Patterns = 22
 # Mind Map
-1. Creational Patterns
+1. Creational Patterns (5)
    1. Singleton
    2. Factory Method
    3. Abstract Factory
    4. Builder
    5. Prototype
-2. Structural Patterns
+2. Structural Patterns (6)
    1. Adapter
    2. Bridge
    3. CompositeDecorator
    4. Facade
    5. Flyweight
    6. Proxy
-3. Behavioral Patterns
+3. Behavioral Patterns (11)
     1. Chain of responsibility
     2. Command
     3. Interpreter
