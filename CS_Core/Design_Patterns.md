@@ -1,10 +1,10 @@
 # Mind Map
-- 1. Creational Patterns
-  - 1. Singleton
-  - 2. Factory Method
-  - 3. Abstract Factory
-  - 4. Builder
-  - 5. Prototype
+1. Creational Patterns
+   1. Singleton
+   2. Factory Method
+   3. Abstract Factory
+   4. Builder
+   5. Prototype
 - Structural Patterns
   - Adapter
   - Bridge
