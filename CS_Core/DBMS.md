@@ -186,3 +186,47 @@
   - Partial Participation: Only some instances of the entity may be involved in the relationship. Example: Not every Customer places an Order, so the Customer has partial participation in the Places relationship.
   
 - ![image](https://github.com/user-attachments/assets/d04f239b-38ba-4c0d-b75f-7d07c0a0b176)
+
+
+## 3.3 Relational Model
+- It structures data into tables (also called relations), where each table is made up of rows (tuples) and columns (attributes). This model forms the basis of most modern databases (like MySQL, PostgreSQL, and Oracle) and provides a straightforward way to organize and manipulate data.
+
+### 3.3.1 Basic Concepts of the Relational Model
+- Relation (Table): A relation is essentially a table in the database. It consists of rows and columns. Each relation represents a set of related data. For example, a "Student" table would store data related to students.
+- Tuple (Row): A tuple is a single row in a table, representing one record or data entry. Example: A single row in a "Student" table may represent one student’s details (like student_id, name, email).
+- Attribute (Column): An attribute is a column in a table, representing a property of the entity that the table stores. Example: In the "Student" table, attributes might include student_id, name, email, etc.
+- Domain: A domain is a set of permissible values for a given attribute. It defines the type and range of data that can be entered in that column.
+Example: The domain of the age attribute in a "Student" table might be integers between 1 and 120.
+### 3.3.2 Characteristics of a Relational Table
+- Each row is unique: No two rows in a table are identical, ensuring that each tuple can be uniquely identified.
+- The order of rows does not matter: The relational model does not rely on the order of rows; they can be displayed in any order without affecting the integrity of the data.
+- The order of columns does not matter: The order of attributes in the table does not matter. As long as the data is associated with the correct column, the table remains valid.
+- All values are atomic: Each attribute in a table contains a single value. This is known as the atomicity property, which means that a field should not contain multiple values (e.g., a single cell should not hold multiple email addresses).
+### 3.3.3 Keys in the Relational Model
+- Keys are crucial in the relational model because they ensure data integrity and help establish relationships between tables.
+- Type of Keys
+  - Primary Key: A primary key is an attribute (or set of attributes) that uniquely identifies each tuple (row) in a relation (table). Example: In a "Student" table, the student_id is the primary key because each student has a unique ID.
+  - Foreign Key: A foreign key is an attribute in one table that refers to the primary key of another table. This establishes a relationship between the two tables. Example: An order table might have a customer_id that references the primary key customer_id in the "Customer" table. This ensures that each order is linked to an existing customer.
+  - Candidate Key: A candidate key is an attribute (or set of attributes) that could potentially serve as the primary key. If a table has multiple candidate keys, one is selected as the primary key.
+  - Composite Key: A composite key is a combination of two or more attributes that, together, uniquely identify a tuple. Example: In a "Course_Registration" table, where no single attribute can uniquely identify a row, a combination of student_id and course_id might serve as the composite key.
+### 3.3.4. Relationships Between Tables
+- In the relational model, relationships between tables are established using foreign keys. These relationships allow the data in one table to be connected to data in another.
+- Types of Relationships:
+  - One-to-One (1:1): Each row in one table is related to only one row in another table. Example: A "Person" table and a "Passport" table where each person has only one passport.
+  - One-to-Many (1:M): One row in one table is related to multiple rows in another table. Example: A "Customer" can place multiple "Orders", but each order belongs to only one customer.
+  - Many-to-Many (M:M): Rows in one table are related to multiple rows in another table, and vice versa. Example: A "Student" can enroll in many "Courses", and each "Course" can have many "Students". This relationship is typically modeled using a third table (called a junction or associative table), such as "Student_Course".
+### 3.3.5. Integrity Rules
+- To maintain the consistency and accuracy of data, the relational model enforces certain integrity constraints:
+- **Entity Integrity:**
+  - Ensures that the primary key of a table is unique and not null. This ensures that each record in a table can be uniquely identified.
+  - Example: A "Student" table’s primary key student_id cannot have duplicates or null values.
+- **Referential Integrity:**
+  - Ensures that a foreign key value in one table must match a primary key value in another table, or it must be null.
+  - Example: If a customer_id in the "Order" table references a customer_id in the "Customer" table, it must match an existing customer or be null.
+
+### 3.3.6 Advantages of the Relational Model
+- Simplicity: Easy to understand and use with clearly defined tables, columns, and relationships.
+- Data Integrity: Enforces strict rules (like primary and foreign keys) to ensure data accuracy.
+- Flexibility: Can handle complex relationships between data and allows easy querying through SQL.
+- Normalization: Supports normalization to remove redundancy and improve data integrity.
+- Scalability: Well-suited for scaling large databases with millions of records.
