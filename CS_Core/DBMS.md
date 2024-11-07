@@ -13,21 +13,17 @@
   - Object-Oriented
   - Hierarchical
   - Network
-- Data Models
-  - Relational Model: Tables (Relations), Attributes (Column), Tuples (Rows)
-  - Hierarchical Model: Parent-child Relationships
-  - Network Model: Many to Many Relationships, One to Many Relationships, Many to one Relationships, one to one Relationships
-  - Object-Oriented Model: Objects, Classes, Inheritance
-  - NoSQL Models: Documents-Based, Key-Value, Column-Family, Graph-Based
 - Database Design
   - Schema
   - ER Model (Entity-Relationship)
+  - Relational Model
+    - Keys
+      - Primary Key
+      - Foreign Key
+      - Composite Key
+      - Candidate Key
   - Normalization
   - Denormalization
-  - Keys
-    - Primary Key
-    - Foreign Key
-    - Composite Key
 - Transactions
   - ACID Properties
     - Atomicity
@@ -230,3 +226,5 @@ Example: The domain of the age attribute in a "Student" table might be integers 
 - Flexibility: Can handle complex relationships between data and allows easy querying through SQL.
 - Normalization: Supports normalization to remove redundancy and improve data integrity.
 - Scalability: Well-suited for scaling large databases with millions of records.
+
+## 4. Normalization
