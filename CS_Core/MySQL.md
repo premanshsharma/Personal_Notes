@@ -1,17 +1,56 @@
-- SQL is standard query language
-- SQL keywords are not case sensitive, select is same as SELECT
+- SQL is a standard query language
+- SQL keywords are not case sensitive, select is the same as SELECT
 - ; at the end of every statement is required.
 - COMMENTS: Can be added using -- for single-line comments or /* ... */ for multi-line comments.
 
 # Mind Map
-- Data Definition Language (DDL) - defines the structure of db, including creating, altering & dropping tables. 
+- Data Definition Language (DDL)
+  - defines the structure of db, including creating, altering & dropping tables. 
   - CREATE, ALTER, DROP, TRUNCATE
 - Data Manipulation Language (DML)
+  - DML commands query, insert, update, and delete data in db.
+  - SELECT: Retrieves data from one or more tables.
+  - INSERT INTO: Adds new records to a table.
+  - UPDATE: Modifies existing records in a table.
+  - DELETE: Removes records from a table.
+  - INSERT SELECT: Inserts data returned by a SELECT query into a table.
+  - NULL VALUES: Refers to inserting or handling NULL values in a table.
+  - LIMIT: Limits the number of records returned by a SELECT statement.
 - Data Query Language (DQL)
+  - SELECT: Retrieves data from one or more tables (also listed under DML because it is part of data manipulation).
+  - WHERE: Filters rows based on a specified condition.
+  - ORDER BY: Sorts the result set by one or more columns.
+  - GROUP BY: Groups rows that have the same values into summary rows, like "count" or "average."
+  - HAVING: Filters groups formed by GROUP BY based on a condition.
+  - MIN, MAX, COUNT, AVG, SUM: Aggregate functions used with GROUP BY or in standalone queries to calculate minimum, maximum, count, average, or sum of values.
 - Data Control Language (DCL)
+  - DCL commands are used for permissions and access control to data and objects.
 - Clauses
+  - WHERE: Filters records based on a condition.
+  - AND, OR, NOT: Logical operators used in filtering conditions.
+  - IN: Checks if a value matches any value in a list or subquery.
+  - BETWEEN: Filters results within a range of values.
+  - LIKE: Searches for a specified pattern in a column.
+  - WILDCARDS: Used in conjunction with LIKE to represent one or more unspecified characters (e.g., %, _).
+  - EXISTS: Checks if a subquery returns any results.
+  - ANY, ALL: Used with subqueries to compare a value to a set of values returned by a subquery.
 - Operators
+  - OPERATORS: General term for operators like arithmetic (+, -, *, /), comparison (=, >, <, >=, <=, <>), and logical (AND, OR, NOT).
+  - NULL FUNCTIONS: Functions to handle or check for NULL values, such as IS NULL, IS NOT NULL, COALESCE, NULLIF.
 - Joins
+  - Joins are used to combine rows from two or more tables based on a related column.
+  - JOINS: General category of operations that combine rows from multiple tables.
+  - INNER JOIN: Returns records that have matching values in both tables.
+  - OUTER JOIN: Returns all records when there is a match in one of the tables.
+  - LEFT JOIN: Returns all records from the left table and matched records from the right table.
+  - RIGHT JOIN: Returns all records from the right table and matched records from the left table.
+  - SELF JOIN: Joins a table with itself.
+  - CROSS JOIN: Returns the Cartesian product of two tables (i.e., all combinations of rows)
 - Set Operations
+  - These operations are used to combine results from multiple queries.
+  - UNION: Combines the results of two or more SELECT queries, removing duplicates.
+  - UNION ALL: Combines the results of two or more SELECT queries, including duplicates.
 - Conditional Expressions
+  - CASE: Allows conditional logic within a query to return different values based on conditions (similar to an IF-ELSE statement).
 - Aliases
+  - ALIASES: Renaming a table or column temporarily in the query for readability or convenience. (AS keyword is used).
