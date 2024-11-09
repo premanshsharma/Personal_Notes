@@ -47,6 +47,7 @@
      2. Gradient Descent and its Variants (Stochastic, Mini-batch, Adam)
      3. Lagrange Multipliers
      4. Constrained vs. Unconstrained Optimization
+      
 2. Data Preprocessing
   1. Data Cleaning
      1. Handling Missing Data (Imputation, Removal)
