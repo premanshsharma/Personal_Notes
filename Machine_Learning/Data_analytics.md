@@ -13,34 +13,34 @@
        4. Variance
        5. Standard Deviation
        6. Percentiles
-       7. QUartiles 
+       7. Quartiles
      2. Inferential Statistics
        1. Point estimation and confidence intervals
        2. Hypothesis testing
           1. Null vs Alternative Hypotheses
-          2. Type 1 and type 2 errors
-          3. p values
-          4. significance levels
+          2. Type 1 and Type 2 errors
+          3. p-values
+          4. Significance levels
           5. Power of a test
           6. Common tests:
-            1. t-test (Independent, Paired, One-sample)
-            2. ANOVA (One-way, Two-way)
-            3. chi-square test (Goodness-of-fit, Independence)
-            4. F-test (Variance comparison)
+             1. t-test (Independent, Paired, One-sample)
+             2. ANOVA (One-way, Two-way)
+             3. Chi-square test (Goodness-of-fit, Independence)
+             4. F-test (Variance comparison)
      3. Probability Theory
         1. Basic probability concepts
-          1. Addition rule
-          2. Multiplication rule
+           1. Addition rule
+           2. Multiplication rule
         2. Conditional probability and independence
-        3. Bayes theorem
+        3. Bayes' theorem
         4. Random Variables and Probability distributions (Discrete and continuous)
            1. Bernoulli, Binomial, Poisson distributions
            2. Normal, Exponential, Uniform distributions
-     4. central limit theorem
-     5. Bayes theorem 
+     4. Central Limit Theorem
+     5. Bayes' theorem
   3. Calculus
      1. Derivatives and their applications in optimization
-     2. Integrals (area under the curve, cumulative distribution functions)
+     2. Integrals (Area under the curve, Cumulative distribution functions)
      3. Multivariate Calculus (Partial Derivatives, Jacobian, Hessian)
   4. Optimization
      1. Convex optimization techniques
@@ -68,26 +68,21 @@
      4. Binning (Discretizing continuous variables)
      5. Dimensionality Reduction (PCA, t-SNE, UMAP)
      6. Handling Imbalanced Datasets (SMOTE, Undersampling)
+
 3. Exploratory Data Analysis (EDA)
-  1. Univariate and bivariate analysis
+  1. Univariate and Bivariate analysis
      1. Univariate Analysis (Histograms, Box plots)
      2. Bivariate Analysis (Scatter plots, Pair plots)
      3. Multivariate Analysis (Pairwise Correlation, Heatmaps)
-  2. Data visualization
+  2. Data Visualization
      1. Visualization Libraries (Matplotlib, Seaborn, Plotly)
      2. Common Plot Types (Bar, Line, Scatter, Heatmaps)
      3. Advanced Plots (Violin plots, Bubble charts, Geo-maps)
      4. Interactive Visualizations (Dash, Plotly)
-  3. Statistical analysis
+  3. Statistical Analysis
      1. Correlation Matrices (Pearson, Spearman, Kendall)
      2. Analysis of Variance (ANOVA)
      3. t-tests (Independent, Paired, One-sample)
      4. Chi-Square Tests (Categorical variable relationships)
      5. F-test, Levene’s test (Variance comparison)
      6. Time Series Analysis (Decomposition, Stationarity, Autocorrelation)
-    
-
-
-
-
-
