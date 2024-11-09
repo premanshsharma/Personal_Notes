@@ -48,39 +48,39 @@
        3. Lagrange Multipliers
      4. Constrained vs. Unconstrained Optimization
 2. Data Preprocessing
-  1. Data Cleaning
-     1. Handling Missing Data (Imputation, Removal)
-     2. Removing Duplicates
-     3. Handling Outliers (Winsorization, IQR Method)
-     4. Inconsistent Formatting (Date formats, Text normalization)
-     5. Dealing with Noise (Smoothing techniques)
-  2. Feature Engineering
-     1. Creating New Features from Existing Ones (Polynomials, Interactions)
-     2. Encoding Categorical Variables (One-hot encoding, Label encoding, Target encoding)
-     3. Scaling and Normalization (Min-Max Scaling, Standardization)
-     4. Feature Selection Techniques (PCA, Lasso, Ridge)
-     5. Feature Importance (SHAP, Permutation Importance)
-  3. Data Transformation
-     1. Standardization (Z-score normalization)
-     2. Normalization (Min-Max, Log, Power transformations)
-     3. Log Transforms
-     4. Binning (Discretizing continuous variables)
-     5. Dimensionality Reduction (PCA, t-SNE, UMAP)
-     6. Handling Imbalanced Datasets (SMOTE, Undersampling)
+      1. Data Cleaning
+         1. Handling Missing Data (Imputation, Removal)
+         2. Removing Duplicates
+         3. Handling Outliers (Winsorization, IQR Method)
+         4. Inconsistent Formatting (Date formats, Text normalization)
+         5. Dealing with Noise (Smoothing techniques)
+      2. Feature Engineering
+         1. Creating New Features from Existing Ones (Polynomials, Interactions)
+         2. Encoding Categorical Variables (One-hot encoding, Label encoding, Target encoding)
+         3. Scaling and Normalization (Min-Max Scaling, Standardization)
+         4. Feature Selection Techniques (PCA, Lasso, Ridge)
+         5. Feature Importance (SHAP, Permutation Importance)
+      3. Data Transformation
+         1. Standardization (Z-score normalization)
+         2. Normalization (Min-Max, Log, Power transformations)
+         3. Log Transforms
+         4. Binning (Discretizing continuous variables)
+         5. Dimensionality Reduction (PCA, t-SNE, UMAP)
+         6. Handling Imbalanced Datasets (SMOTE, Undersampling)
 3. Exploratory Data Analysis (EDA)
-  1. Univariate and Bivariate analysis
-     1. Univariate Analysis (Histograms, Box plots)
-     2. Bivariate Analysis (Scatter plots, Pair plots)
-     3. Multivariate Analysis (Pairwise Correlation, Heatmaps)
-  2. Data Visualization
-     1. Visualization Libraries (Matplotlib, Seaborn, Plotly)
-     2. Common Plot Types (Bar, Line, Scatter, Heatmaps)
-     3. Advanced Plots (Violin plots, Bubble charts, Geo-maps)
-     4. Interactive Visualizations (Dash, Plotly)
-  3. Statistical Analysis
-     1. Correlation Matrices (Pearson, Spearman, Kendall)
-     2. Analysis of Variance (ANOVA)
-     3. t-tests (Independent, Paired, One-sample)
-     4. Chi-Square Tests (Categorical variable relationships)
-     5. F-test, Levene’s test (Variance comparison)
-     6. Time Series Analysis (Decomposition, Stationarity, Autocorrelation)
+      1. Univariate and Bivariate analysis
+         1. Univariate Analysis (Histograms, Box plots)
+         2. Bivariate Analysis (Scatter plots, Pair plots)
+         3. Multivariate Analysis (Pairwise Correlation, Heatmaps)
+      2. Data Visualization
+         1. Visualization Libraries (Matplotlib, Seaborn, Plotly)
+         2. Common Plot Types (Bar, Line, Scatter, Heatmaps)
+         3. Advanced Plots (Violin plots, Bubble charts, Geo-maps)
+         4. Interactive Visualizations (Dash, Plotly)
+      3. Statistical Analysis
+         1. Correlation Matrices (Pearson, Spearman, Kendall)
+         2. Analysis of Variance (ANOVA)
+         3. t-tests (Independent, Paired, One-sample)
+         4. Chi-Square Tests (Categorical variable relationships)
+         5. F-test, Levene’s test (Variance comparison)
+         6. Time Series Analysis (Decomposition, Stationarity, Autocorrelation)
