@@ -47,7 +47,6 @@
      2. Gradient Descent and its Variants (Stochastic, Mini-batch, Adam)
      3. Lagrange Multipliers
      4. Constrained vs. Unconstrained Optimization
-      
 2. Data Preprocessing
   1. Data Cleaning
      1. Handling Missing Data (Imputation, Removal)
@@ -68,7 +67,6 @@
      4. Binning (Discretizing continuous variables)
      5. Dimensionality Reduction (PCA, t-SNE, UMAP)
      6. Handling Imbalanced Datasets (SMOTE, Undersampling)
-
 3. Exploratory Data Analysis (EDA)
   1. Univariate and Bivariate analysis
      1. Univariate Analysis (Histograms, Box plots)
