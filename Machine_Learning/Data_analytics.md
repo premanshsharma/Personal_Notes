@@ -28,7 +28,7 @@
             3. chi-square test (Goodness-of-fit, Independence)
             4. F-test (Variance comparison)
      3. Probability Theory
-       1. Basic probability concepts
+        1. Basic probability concepts
           1. Addition rule
           2. Multiplication rule
         2. Conditional probability and independence
