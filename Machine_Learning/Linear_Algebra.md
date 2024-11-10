@@ -154,6 +154,7 @@ Matrices are extensively used in data science and machine learning for tasks suc
     - A unit vector is a vector with a magnitude of 1. To convert a vector v into a unit vector, we divide it by its magnitude.
   - Projection of one vector onto another
     - projection of a vector u onto a vector v is a vector that lies along v, representing how much of u points in the direction of v.
-    - proj<sub>v</sub>u = \frac{u.v}{v.v}v
-
+```math
+     \text{proj_v}\text{u} = \frac{u.v}{v.v}v
+```
 
