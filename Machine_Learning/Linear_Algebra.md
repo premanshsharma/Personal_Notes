@@ -146,8 +146,8 @@ Matrices are extensively used in data science and machine learning for tasks suc
                [u1 u2 u3]
                [v1 v2 v3]]
   - Magnitude (Norm) of a vector
-    - ||v|| = (\frac{\sqrt{v<sub>1</sub><sup>2</sup> + v<sub>2</sub><sup>2</sup> ........... + v<sub>n</sub><sup>2</sup>}{1}})
-    - \frac{\sqrt{()}}
-
+  ```math
+      ||v|| =  \sqrt{v1^2 + v2^2 ........... + vn^2}
+  ```
 
 
