@@ -155,6 +155,6 @@ Matrices are extensively used in data science and machine learning for tasks suc
   - Projection of one vector onto another
     - projection of a vector u onto a vector v is a vector that lies along v, representing how much of u points in the direction of v.
 ```math
-     \text{proj_(v)}\text{u} = \frac{u.v}{v.v}v
+     \text{proj_{(v)}u} = \frac{u.v}{v.v}v
 ```
 
