@@ -29,7 +29,7 @@ A **matrix** is a rectangular array of numbers, symbols, or expressions, arrange
 
 ### **Matrix Notation**
 A matrix is denoted by a capital letter, say \( A \). For example, a matrix with \( m \) rows and \( n \) columns (an \( m \times n \) matrix) looks like this:
-
+```math
 \[
 A = \begin{bmatrix} 
 a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -38,7 +38,7 @@ a_{21} & a_{22} & \cdots & a_{2n} \\
 a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{bmatrix}
 \]
-
+```
 Here, \( a_{ij} \) is the element of the matrix at the \( i \)-th row and \( j \)-th column.
 
 ## **2. Types of Matrices**
@@ -53,31 +53,31 @@ Here, \( a_{ij} \) is the element of the matrix at the \( i \)-th row and \( j \
 
 ### **Addition and Subtraction of Matrices**
 Two matrices of the same dimension can be added or subtracted by adding or subtracting their corresponding elements:
-
+```math
 \[
 A + B = \begin{bmatrix} 
 a_{11} + b_{11} & a_{12} + b_{12} \\
 a_{21} + b_{21} & a_{22} + b_{22} 
 \end{bmatrix}
 \]
-
+```
 ### **Matrix Multiplication**
 Matrix multiplication is only possible if the number of columns in the first matrix equals the number of rows in the second matrix. For two matrices \( A \) and \( B \):
-
+```math
 \[
 (A \times B)_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}
 \]
-
+```
 ### **Scalar Multiplication**
 If \( \lambda \) is a scalar, multiplying a matrix \( A \) by \( \lambda \) scales every element in the matrix:
-
+```math
 \[
 \lambda A = \begin{bmatrix} 
 \lambda a_{11} & \lambda a_{12} \\
 \lambda a_{21} & \lambda a_{22}
 \end{bmatrix}
 \]
-
+```
 ## **4. Special Matrices**
 
 1. **Zero Matrix**: A matrix where all elements are zero.
