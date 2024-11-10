@@ -88,26 +88,26 @@ If \( \lambda \) is a scalar, multiplying a matrix \( A \) by \( \lambda \) scal
 
 ### **Determinant**
 The determinant of a square matrix \( A \) provides important information, including whether the matrix is invertible. For a \( 2 \times 2 \) matrix:
-
+```math
 \[
 \text{det}(A) = \begin{vmatrix} 
 a_{11} & a_{12} \\
 a_{21} & a_{22}
 \end{vmatrix} = a_{11}a_{22} - a_{12}a_{21}
 \]
-
+```
 ### **Inverse**
 The inverse of a matrix \( A \) exists only if \( \text{det}(A) \neq 0 \). The inverse of a matrix \( A \), denoted \( A^{-1} \), satisfies \( A A^{-1} = I \).
 
 For a \( 2 \times 2 \) matrix, the inverse is:
-
+```math
 \[
 A^{-1} = \frac{1}{\text{det}(A)} \begin{bmatrix} 
 a_{22} & -a_{12} \\
 -a_{21} & a_{11}
 \end{bmatrix}
 \]
-
+```
 ## **6. Significance of Matrices in Data Science**
 
 Matrices are extensively used in data science and machine learning for tasks such as:
