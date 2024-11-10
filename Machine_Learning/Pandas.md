@@ -1,3 +1,95 @@
+- axis = 0 - rows, 1 - cols
+- Summary of Key Steps and Functions:
+  - Load Data: pd.read_csv(), pd.read_excel(), pd.read_json()
+  - Inspect Data: df.head(), df.info(), df.describe()
+  - Handle Missing Data: df.isnull(), df.dropna(), df.fillna()
+  - Handle Duplicates: df.duplicated(), df.drop_duplicates()
+  - Transform Data: df.rename(), df.astype(), df.apply()
+  - Filter Data: df[df['column'] > condition]
+  - Sort Data: df.sort_values()
+  - Group and Aggregate: df.groupby(), df.agg()
+  - Merge and Join: pd.merge(), pd.concat(), df.join()
+  - Pivot: df.pivot_table()
+  - Visualize: df.plot()
+  - Export: df.to_csv(), df.to_excel()
+
+--------------------
+- Data Cleaning
+  - Handling Missing Data (Imputation, Removal) https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
+    - filling missing data
+      - fillna
+        - value: The value(s) to replace missing data with.
+        - method: Method of filling ('ffill' or 'bfill').
+        - axis: Axis along which to fill (0 for rows, 1 for columns).
+        - inplace: Whether to modify the DataFrame in place (default is False).
+        ```python
+        df.fillna(value=None, method=None, axis=None, inplace=False)
+        ```
+      - interpolate
+      - replace
+    - dropping missing data -
+      - dropna
+        - axis: Specifies whether to drop rows (0) or columns (1).
+        - how: Drop rows or columns if all or any values are missing ('any' or 'all').
+        - thresh: Require that many non-NA values before dropping.
+        - subset: Specify which columns to check for missing values.
+        - inplace: Whether to modify the DataFrame in place (default is False)
+        ```python
+                df.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
+        ```
+    - flag missing values
+      - None, but returns a DataFrame of the same shape with True for missing values and False otherwise.
+      - isnull
+        ```python
+        df.isnull()
+        ``` 
+    - detect missing values:- isna, notna - consider None as missing value
+      - to summarize missing values for each column use sum()
+  - Removing Duplicates
+    - check for duplicates
+      - duplicated
+        - subset: Columns to consider for duplicates (default is None to check all columns).
+        - keep: Which duplicates to mark ('first', 'last', or False to mark all duplicates).
+        - returns bool that indicates whether a row is a duplicate or not
+        ```python
+        df.duplicated(subset=None, keep='first')
+        ```
+    - remove duplicates
+      - drop_duplicates
+        - subset: Columns to consider for duplicates (default is None to check all columns).
+        - keep: Which duplicates to keep ('first', 'last', or False to drop all duplicates).
+        - inplace: Whether to modify the DataFrame in place (default is False)
+      ```python
+      df.drop_duplicates(subset=None, keep='first', inplace=False)
+      ```
+    - count duplicates = duplicated.sum
+  - Handling Outliers (Winsorization, IQR Method)
+  - Inconsistent Formatting (Date formats, Text normalization)
+  - Dealing with Noise (Smoothing techniques)
+
+- Data Loading
+  - read_csv
+  - read_excel
+  - read_json
+
+ - summary of data - data types, non null counts, etc - info
+ - basic statistics - mean, min, max, quartiles - describe
+ - Transformation and cleaning
+   - change datatype - astype
+   - rename column - rename
+   - apply function - .apply
+ - Filter data
+ - Sorting data - sort_values
+ - Grouping and aggregating data - groupby
+ - merging and joining - merge, concat
+ - Pivot ables - pivot table
+ - data visualization - plot
+ - exporting data - to_csv, to_excel
+
+
+
+
+
 # Join Tables
 - merge - sql like joins, inner, outer, left, right on keys
   - **If both key columns contain rows where the key is a null value, those rows will be matched against each other. This is different from usual SQL join behaviour and can lead to unexpected results.**
