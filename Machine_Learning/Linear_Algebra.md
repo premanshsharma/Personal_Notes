@@ -16,8 +16,7 @@
   - Determinant of a matrix
   - Matrix Inversion
 3. Vectors
-4. Eigenvalues
-5. Eigenvectors
+4. Eigenvalues and Eigenvectors
 6. Matrix Factorization (SVD, QR decomposition)
 
 # Matrices
@@ -167,4 +166,25 @@ Matrices are extensively used in data science and machine learning for tasks suc
     - **Linear Independence **A set of vectors is said to be linearly independent if none of the vectors in the set can be written as a linear combination of the others.
       - v1, v2, v3 are vecctors and c1, c2, c3 are scalars if c1v1 + c2v2 + c3v3 = 0 only when c1, c2, c3 = 0
     - **Span **The span of a set of vectors is the set of all possible vectors that can be created by taking linear combinations of those vectors. For example, the span of two non-parallel vectors in 2D space is the entire 2D plane.
+
+# Eigen Vectors
+- They describe special types of linear transformations where vectors only get stretched or compressed, but not rotated when a matrix is applied to them.
+- Given square matrix A of size n x n, an eigenvector is a non-zero vector v such that when A is applied to v then the vector is only scaled by a scalar factor λ (called the eigenvalue)
+  - Av = λv
+  - Av - λv = 0
+  - (A-λI)v = 0
+  - det(A-λI) = 0
+- Geometric Interpretation
+  - Eigenvectors: These vectors represent directions along which the transformation A stretches or compresses the vector space.
+  - Eigenvalues: These scalars represent the amount of stretching or compression along the corresponding eigenvector. If the eigenvalue is positive, the vector is stretched; if it’s negative, the vector is flipped (reversed) and stretched.
+   - Mathematical Significance
+     - Principal Component Analysis (PCA): One of the most important applications of eigenvectors is PCA, which is used for dimensionality reduction. PCA finds the eigenvectors (called principal components) of the covariance matrix of data, and the corresponding eigenvalues tell us the amount of variance captured by each principal component.
+     - Matrix Diagonalization: Eigenvalue decomposition is used to diagonalize matrices, which simplifies many computations in linear algebra, including solving systems of linear equations or computing matrix exponentials.
+     - Markov Chains: In probabilistic models such as Markov chains, the steady-state distribution is given by the eigenvector corresponding to the eigenvalue 1 of the transition matrix.
+     - Graph Theory: The eigenvalues of the adjacency matrix of a graph can provide insights into the structure of the graph, such as connectivity and clustering properties.
+     - Data Compression: In data compression (e.g., image compression via Singular Value Decomposition), eigenvalues determine how much information is retained after compression.
+
+
+# Matrix Factorization
+
 
