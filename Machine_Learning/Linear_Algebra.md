@@ -159,4 +159,12 @@ Matrices are extensively used in data science and machine learning for tasks suc
      proj_{(v)}u = \frac{u.v}{v.v}v
 
 ```
+  - Angle between two vectors
+```math
+  cosθ = \frac{u.v}{||u||||v||}
+```
+  - Linear Independence and span
+    - **Linear Independence **A set of vectors is said to be linearly independent if none of the vectors in the set can be written as a linear combination of the others.
+      - v1, v2, v3 are vecctors and c1, c2, c3 are scalars if c1v1 + c2v2 + c3v3 = 0 only when c1, c2, c3 = 0
+    - **Span **The span of a set of vectors is the set of all possible vectors that can be created by taking linear combinations of those vectors. For example, the span of two non-parallel vectors in 2D space is the entire 2D plane.
 
