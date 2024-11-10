@@ -145,9 +145,15 @@ Matrices are extensively used in data science and machine learning for tasks suc
     - u x v = [[i   j  k]
                [u1 u2 u3]
                [v1 v2 v3]]
+  - The magnitude gives the length of the vector, which is important for normalizing vectors and comparing distances in space.
   - Magnitude (Norm) of a vector
   ```math
       ||v|| =  \sqrt{v1^2 + v2^2 ........... + vn^2}
   ```
+  - Unit Vector
+    - A unit vector is a vector with a magnitude of 1. To convert a vector v into a unit vector, we divide it by its magnitude.
+  - Projection of one vector onto another
+    - projection of a vector u onto a vector v is a vector that lies along v, representing how much of u points in the direction of v.
+    - proj<sub>v</sub>u = \frac{u.v}{v.v}v
 
 
