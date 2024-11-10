@@ -116,3 +116,37 @@ Matrices are extensively used in data science and machine learning for tasks suc
 - **Linear Transformations**: Matrices are used to apply transformations in machine learning algorithms.
 - **Principal Component Analysis (PCA)**: PCA relies on matrix decompositions like eigenvalue and singular value decomposition (SVD) to reduce dimensionality.
 - **Neural Networks**: Weights and inputs in neural networks are often represented as matrices, and matrix multiplication is used for forward and backward propagation.
+
+
+
+# Vectors
+- A vector is a mathematical object that has both magnitude and direction.
+- Vector v is represented by v = [v1, v2, ........, vn]
+- v = [1, 2, 3], represent a 3-dimensional vector
+- vi is a vector component corresponding to a coordinate in a specific dimension.
+- Types of vector
+  - zero vector = [0, 0, 0, ......, 0]
+  - unit vector = magnitude is 1
+  - standard basis vector = 1 in one position and 0 in all others. ex:- e1 = [1, 0, 0], e2 = [0, 1, 0], e3 = [0, 0, 1]
+- Basic Vector Operations
+  - Addition
+    - u = [u1, u2, u3, ..........., un], v = [v1, v2, v3, ......., vn]
+    - u+v = [u1+v1, u2+v2, ........, un+vn]
+  - Scalar Multiplication
+    - c.v = [c.v1, c.v2, ......, c.vn]
+  - Dot Product
+    - u.v = u1v1 + u2v2 + ....... + unvn = ∑uivi
+    - **Significance**
+      - The dot product measures the degree of alignment between two vectors.
+      - If the dot product is 0, the vectors are orthogonal (perpendicular).
+      - If it’s positive, the vectors point in a similar direction; if negative, they point in opposite directions.
+  - Cross Product
+    - In 3D space, the cross product of two vectors u and v results in a vector that is orthogonal to both u and v. It is calculated as:
+    - u x v = [[i   j  k]
+               [u1 u2 u3]
+               [v1 v2 v3]]
+  - Magnitude (Norm) of a vector
+    - ||v|| = \sqrt(v1<sup>2</sup> + v2<sup>2</sup> ........... + vn<sup>2</sup>)
+
+
+
