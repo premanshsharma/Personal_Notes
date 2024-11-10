@@ -149,3 +149,19 @@ s(i)=\frac{b(i)-a(i)}{max(a(i), b(i))}
     - -1: The point may have been assigned to the wrong cluster, as it is closer to points in another cluster.
 - A higher average Silhouette Score across all points in the dataset indicates better-defined clusters.  
 
+
+Precision:
+
+Formula: Precision = TP / (TP + FP)
+Definition: Precision focuses on the accuracy of positive predictions. It tells you out of all the instances the model predicted as positive, how many were actually positive.
+Interpretation: High precision means that when the model predicts something as positive, it's usually correct (i.e., fewer false positives).
+Example: If a model identifies 100 emails as spam, and 90 of them are actually spam (while 10 are not), the precision is 90%.
+Recall (also called Sensitivity or True Positive Rate):
+
+Formula: Recall = TP / (TP + FN)
+Definition: Recall focuses on the ability of the model to find all actual positives. It tells you out of all the actual positive instances, how many the model correctly predicted as positive.
+Interpretation: High recall means the model is good at identifying actual positive cases, but it may produce more false positives (FP).
+Example: If there are 100 actual spam emails, and the model correctly identifies 80 of them as spam, the recall is 80%.
+Summary:
+Precision is about how many of the predicted positives are correct.
+Recall is about how many of the actual positives are identified.
