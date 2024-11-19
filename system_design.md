@@ -1,1 +1,11 @@
-
+- reference:-
+  - https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#system-design-topics-start-here
+  - https://takeuforward.org/system-design/complete-system-design-roadmap-with-videos-for-sdes
+# System design
+- Why system design
+  - Ensures systems work reliably for global users.
+  - Plans for issues like disasters, power outages, and crashes.
+  - Keeps customers happy, boosting company revenue.
+  - Engineers plan solutions before starting to code.
+  - Builds systems that stay strong in tough situations.
+- 
