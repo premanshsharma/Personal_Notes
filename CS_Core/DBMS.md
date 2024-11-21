@@ -1,3 +1,138 @@
+## Transactions and concurrency control
+- **Trancasction**
+  - it is a single logical unit of work that access and possibly alters the contents of a database.
+  - It uses read and write operations to manage data.
+  - **ACID Propertiese** - A transaction should follow these properties to ensure db consistency before and after a transaction.
+    - **Atomicity**
+      - Entiner transaction is executed or nothing none of it is.
+      - No partial execution
+      - **Abort** if transaction is abborted then any changes to the db are not visible
+      - **commit** if transaction is committed then changes are visible
+    - **Consistency** Valid state maintenanceintegrity constraints must be maintained so that the db remains consistent before and after the transaction. It ensures the correctness of the db.
+    - Example: Referring to the previous example, the total amount before and after the transaction must be the same. If initially, Account X has £500 and Account Y has £200, then:
+    - Total before transaction T = £500 + £200 = £700
+    - Total after transaction T = £400 + £300 = £700
+    - The database remains consistent. If T1 completes but T2 fails, the transaction T is incomplete, causing inconsistency.
+    - **Isolation** Transactions do not affect each other
+      - Isolation ensures that multiple transactions can occur concurrently without causing database inconsistency.
+      - Transactions operate independently without interference.
+      - Changes made in a particular transaction are not visible to other transactions until those changes are written to memory or committed.
+    - **Durability** Permanent changes after commitment
+      - Durability guarantees that once a transaction has been completed, its updates and modifications are stored on disk and persist even in the case of a system failure.
+      - These updates become permanent and are stored in non-volatile memory.
+    - Advantages of ACID Properties in DBMS:
+      - Data Consistency: Maintains consistent and accurate data after transaction execution.
+      - Data Integrity: Ensures that changes to the database are permanent.
+      - Concurrency Control: Manages multiple transactions occurring simultaneously, preventing interference.
+      - Recovery: Enables the system to recover data up to the point of failure.
+    - Disadvantages of ACID Properties in DBMS:
+      - Performance: This can cause performance overhead due to additional processing.
+      - Scalability: This may pose scalability challenges in large distributed systems.
+      - Complexity: Implementation can increase system complexity and require significant resources.
+# DBMS
+- Data inconsistency - updates remain unchanged
+- Data redundancy - duplication
+- consistency - A transaction must transition the database from one valid state to another, maintaining data integrity according to defined rules (e.g., constraints, triggers). 
+- concurrency:- Allows multiple users to access data simultaneously
+- concurrency control:- how a user can access data, for ex:- if a read operation is there then multiple users can see the data, for write only one user can access it
+- data integrity:- ensures accuracy and consistency of the data.
+- A DBMS should have:-
+  - Data Integrity: Ensure data accuracy and consistency.
+  - Security: Provide mechanisms to protect data from unauthorized access.
+  - Scalability: Handle increasing amounts of data and users efficiently.
+  - Performance: Enable fast data retrieval and processing.
+  - Backup and Recovery: Support data recovery in case of failures.
+  - Concurrency: Allows multiple users to access data simultaneously without conflicts.
+  - Flexibility: Support various data types and structures.
+  - Ease of Use: Provide user-friendly interfaces and query tools.
+  - Data Independence: Separate the application logic from the physical storage of data.
+  - Transaction Management: Maintain database consistency through ACID properties (Atomicity, Consistency, Isolation, Durability)
+    - Atomicity: A transaction must be treated as a single, indivisible unit. Either all its operations are completed, or none are applied.
+    - Consistency: A transaction must transition the database from one valid state to another, maintaining data integrity according to defined rules (e.g., constraints, triggers). 
+    - Isolation: Transactions should execute independently, without interference. The result should be as if each transaction were executed sequentially. 
+    - Durability: Once a transaction is committed, its changes are permanent, even in case of system failure (e.g., power outage). 
+## Introduction to DBMS
+### Data, Information, Database, and File system
+- **Data** is a collection of raw facts from which meaning or knowledge can be extracted.
+- **Information** extracted knowledge from the data is known as information
+- **Database** is a structured collection of data in a way that allows retrieval, updating, and manipulation of information.
+- **File system**
+  - Os uses this type of system to manage data. For example, hard drives and USB drives.
+  - Disadvantages:-
+    - Data security
+    - Data inconsistency
+    - Poor memory utilization
+    - data redundancy
+
+### DBMS:- Database management system
+- It is a software application(interface) between database and user, designed to efficiently **store(organize), retrieve(search), manipulate(update, add, delete), and manage** large volumes of data with **access control, concurrency control, data integrity**.
+ 
+- Application
+- Need, advantages, disadvantages
+- Data Abstraction
+  - It is hiding unnecessary complexities from the user
+  - 3 levels of abstraction i.e. view level, logical level, physical level
+    - **View level** This is the highest level of data abstraction. It describes the interaction between users and the database system, focusing on what users can see and access.
+    - **Logical Level** This is the middle level of the 3-level data abstraction architecture. It describes what data is stored in the database and how it is structured.
+    - **Physical Level** This is the lowest level of data abstraction. It describes how data is stored in a database, providing details about complex data structures.
+- Database Architecture
+  - Levels/ Data abstraction
+    - show what is needed and high other complexities
+    -  Physical Level/ Internel Level
+      - physical storage of data
+      - responsible for storing and retrieving data from storage devices like ssd or hdd.
+      - Data compression, indexing and storage allocation is implemented here 
+    -  Logical Level/ Conceptual Level
+      - overall organization of data in the db and relationships between them is here
+      - it defines the schema which includes tables, attributes and their relationships   
+    -  View Level/ Externel Level
+      - deals with how user access the data in db
+      - allows user to view data in a way that makes sense to them
+      - provides view interfaces to the tb 
+  - 2-tire
+    - database - user
+  - 3-tire
+    - database - DBMS - user
+      - more secure, more scalability, more users can interact with this 
+#### Types of databases
+- Relational Databases
+- Object Oriented Databases
+- NoSQL Databases
+- Hierarchical Databases
+- Network Databases
+
+
+
+## Data Models
+- It is an abstract way to represent how data is structured and organized within a db.
+- It shows logical arrangement of data and connections between different data components.
+- It is used for undeerstanding and designing of databases.
+### Types of Data Models
+- **Hierarchical Data Model**
+- **Network Data Model**
+- **Relational Data Model**
+  - The relational model organizes data into tables (known as relations) with rows and columns. It is the most common data model and is based on set theory, using Structured Query Language (SQL) for data manipulation.
+- **Entity Relationship Model (ER Model)**
+  - The ER model is used to design relational databases by representing data as entities (objects), attributes (properties of entities), and the relationships connecting these entities.
+- **Object Oriented Data Model**
+- **NoSQL Data Models**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Mind-Map
 - Introduction
   - What is a database
