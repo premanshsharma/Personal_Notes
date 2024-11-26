@@ -1,3 +1,54 @@
+- **Model Evaluation**
+  - It determines how well a trained model generalizes to new, unseen data.
+  - It helps selecting the best model for a task, assessing its performance against expectations and identifying any issues such as overfitting or underfitting.
+  - **Quantifying Predictive Performace**
+    - **Predictive performance**
+      -  **classification** tasks through metrics such as **accuracy, recall, f1 score and area under the AUC-ROC curve**
+      -  **regression** matrices include **mean squared error (MSE), root mean squared error (RMSE), mean absolute error (MAE) and R<sup>2</sup> coefficient of determination**  
+
+- **Overfitting and Underfitting**
+  - **Overfitting** occurs when a model is very complex, performing well on training data but poorly on new, unseen data. **Cross-validation can help offset this**
+  - **Underfitting** occurs when the model is too simple, performing poorly on both training and test data.
+- **Common Techniques in Model Evaluation**
+  - Train Test Split:- the dataset is divided into separate training and testing sets. The model is trained on the former and then evaluated using the latter to approximate how the model will perform on new data.
+  - k Fold Cross Validation:- The dataset is divided into k folds (typically 5 or 10), and each fold is used as the test set k-1 times, with the rest as the training set. This is repeated k times, and the results are averaged. It’s more reliable than a single train-test split.
+  - Leave one out Cross Validation(LOOCV):- A more extreme form of k-fold where k is set to the number of data points. It can be computationally expensive but is helpful when there are limited data points.
+  - Bootstrapping:- A resampling technique where multiple datasets are constructed by sampling with replacement from the original dataset. The model is trained and tested on these bootstrapped datasets, and the average performance is taken as the overall performance estimate.
+
+
+
+
+- Training, validation, and test
+- cross-validation
+- precision, recall, f1 score, accuracy
+- confusion matrix
+- ROC curve and AUC
+- overfitting and underfitting
+- bias and variance
+
+
+# ROC Curve
+- Receiver Operating characteristic curve.
+- Graphical Representation of model performance.
+- ROC Curve:-
+  - True Positive Rate (TPR): Sensitivity/Recall
+  ```math
+  \text{TPR} = \frac_{TP}{TP+FN} 
+  ``` 
+  - False Positive Rate (FPR): 
+  ```math
+    \text{FPR} = \frac_{FP}{FP+TN}
+  ```
+  - ROC Curve Plot:-
+    - X-axis: FPR, y-axis: TPR
+  - 
+
+
+
+
+
+
+
 # Mind Map
 - Regression Metrics
   - R², Adjusted R²
