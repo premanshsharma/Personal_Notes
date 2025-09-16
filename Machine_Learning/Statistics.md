@@ -78,19 +78,48 @@ graph TD
    
       
 - Inferential Statistics
-  - Point estimation and confidence intervals
+  - Fundamentals
+    - Population vs Sample
+    - Sampling Methods
+      - Random
+      - Stratified
+      - Cluster
+      - Systematic
+    - Sampling Distribution
+    - Law of Large Numbers and Central Limit Theorem
+  - Estimation
+    - Point Estimation (Sample mean, proportion)
+    - Interval Estimation (Confidence intervals)
   - Hypothesis testing
     - Null vs Alternative Hypotheses
     - Type 1 and Type 2 errors
     - p-values
     - Significance levels
     - Power of a test
-    - Common tests:
-      - t-test (Independent, Paired, One-sample)
-      - ANOVA (One-way, Two-way)
-      - Chi-square test (Goodness-of-fit, Independence)
-      - F-test (Variance comparison)
-- Central Limit Theorem
+    - Statistical Tests
+      - Parametric Test
+        - t-tests (Independent, Paired, One-sample)
+        - z-test
+        - f-test (Variance comparison)
+        - ANOVA (One-way, Two-way)
+      - Non-Parametric Test
+        - Chi-Square Test (Goodness-of-fit, Independence)
+        - Mann-Whitney U
+        - Wilcoxon
+        - Kruskal-Wallis
+    - Regression and Correlation
+      - Correlation
+        - Pearson
+        - Spearman
+        - Kendall
+      - Linear Regression
+      - Logistic Regression
+      - Assumptions of Regression
+    - Advanced Topics
+      - Effect Size
+      - Resampling Methods (Bootstrapping, Jackknife, Permutation tests)
+      - Bayesian Inference (priors, posteriors, Bayes’ theorem)
+    
 # Descriptive statistics
 ## Mind Map
 - Mean
