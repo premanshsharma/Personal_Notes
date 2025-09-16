@@ -124,12 +124,12 @@ graph TD
 - Measure of Central Tendency
 It's all about finding the centre value in a dataset.  
     - Mean
-      | Type of Mean       | Formula                                  | Example                                                       | Strength / Use Case                                                                 | Weakness / Notes                                                                 |
-|--------------------|------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **Arithmetic Mean** | AM = (Σxᵢ) / n                          | Salaries = [50k, 60k, 70k] → (50+60+70)/3 = 60k                | Simple average, easy to interpret.                                                   | Sensitive to outliers. If one salary is 500k, the mean jumps.                     |
-| **Weighted Mean**   | WM = (Σwᵢxᵢ) / (Σwᵢ)                    | GPA calculation → course grades weighted by credit hours.      | Useful when values have different importance (e.g., weighted revenue per customer).  | Requires weights; misleading if weights are poorly chosen.                        |
-| **Geometric Mean**  | GM = (x₁ × x₂ × … × xₙ)^(1/n)           | Stock growth: 10%, 20%, 30% → GM ≈ 19.7%                       | Best for multiplicative processes (growth rates, ratios).                           | Cannot handle negative values.                                                    |
-| **Harmonic Mean**   | HM = n / (Σ(1/xᵢ))                      | Speed: 60 km/h (1 hr), 30 km/h (1 hr) → HM = 40 km/h           | Good for rates (speed, efficiency). In ML, F1-score = harmonic mean of precision and recall. | Overly influenced by very small values.                                           |
+      | Type of Mean        | Formula                                  | Example                                                       | Strength / Use Case                                                                 | Weakness / Notes                                                  |
+      |---------------------|------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+      | **Arithmetic Mean** | AM = (Σxᵢ) / n                           | Salaries = [50k, 60k, 70k] → (50+60+70)/3 = 60k                | Simple average, easy to interpret.                                                   | Sensitive to outliers. If one salary is 500k, the mean jumps.   |
+      | **Weighted Mean**   | WM = (Σwᵢxᵢ) / (Σwᵢ)                     | GPA calculation → course grades weighted by credit hours.      | Useful when values have different importance (e.g., weighted revenue per customer).  | Requires weights; misleading if weights are poorly chosen.      |
+      | **Geometric Mean**  | GM = (x₁ × x₂ × … × xₙ)^(1/n)            | Stock growth: 10%, 20%, 30% → GM ≈ 19.7%                       | Best for multiplicative processes (growth rates, ratios).                           | Cannot handle negative values.                                    |
+      | **Harmonic Mean**   | HM = n / (Σ(1/xᵢ))                       | Speed: 60 km/h (1 hr), 30 km/h (1 hr) → HM = 40 km/h           | Good for rates (speed, efficiency). In ML, F1-score = harmonic mean of precision and recall. | Overly influenced by very small values.                  |
 
     - Median
       - Even - Odd data
