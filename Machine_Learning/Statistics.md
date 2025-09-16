@@ -17,7 +17,7 @@ graph TD
   Mean --> Geometric
   Mean --> Harmonic
 
-  Median --> "Even - Odd data"
+  Median --> "Even Odd data"
   Median --> "Robustness to outliers"
 
   Mode --> "Uni-model"
