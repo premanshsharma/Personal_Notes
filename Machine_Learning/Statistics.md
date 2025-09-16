@@ -122,8 +122,7 @@ graph TD
     
 # Descriptive statistics
 - Measure of Central Tendency
-  
-It's all about finding the centre value in a dataset.  
+  It's all about finding the centre value in a dataset.  
     - Mean
       | Type of Mean        | Formula                                  | Example                                                       | Strength / Use Case                                                                 | Weakness / Notes                                                  |
       |---------------------|------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------|
