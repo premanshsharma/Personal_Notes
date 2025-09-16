@@ -122,7 +122,7 @@ graph TD
     
 # Descriptive statistics
 - Measure of Central Tendency
-  It's all about finding the centre value in a dataset.  
+    - It's all about finding the centre value in a dataset.  
     - Mean
       | Type of Mean        | Formula                                  | Example                                                       | Strength / Use Case                                                                 | Weakness / Notes                                                  |
       |---------------------|------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -173,8 +173,13 @@ Interpolation is determining the unknown values that lie in between the known da
 | **Deciles**     | Divide data into 10 equal parts                     | Dataset = [5,10,15,…50] → D1=9.5, D5≈27.5 (median)                                     | Finer segmentation than quartiles; good for ranking users.          | Can be overkill for small datasets; may need interpolation.      |
 
   - Measure of Shapes
-    - Skewness (Symmetry of distribution)
-    - Kurtosis (Peakedness/tailedness)
+    - These metrics describe the overall form of a distribution: whether it’s symmetric, skewed, or heavy/light-tailed. 
+
+| Measure       | Formula / Definition                                                                 | Types / Interpretation                                                                 | Advantages (easy words)                                                   | Disadvantages (easy words)                                         | MAANG Use Case                                                                 |
+|---------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Skewness**  | Skewness = (1/n) Σ ((xᵢ – x̄)³ / s³), where s = standard deviation                   | **Symmetric:** ≈0 → Mean ≈ Median ≈ Mode<br>**Positive (Right-skewed):** >0 → Tail right, Mean>Median>Mode<br>**Negative (Left-skewed):** <0 → Tail left, Mean<Median<Mode | Detects asymmetry → helps decide transformations for ML<br>Guides interpretation of mean & median | Sensitive to outliers → extreme values distort it<br>Hard to interpret numerically without plots | Revenue or engagement data often right-skewed → few high-value users<br>Feature engineering: log-transform skewed features |
+| **Kurtosis**  | Kurtosis = (1/n) Σ ((xᵢ – x̄)⁴ / s⁴) – 3, excess kurtosis                             | **Mesokurtic:** ≈0 → normal, moderate tails<br>**Leptokurtic:** >0 → heavy tails, sharp peak<br>**Platykurtic:** <0 → light tails, flat peak | Detects outliers / extreme events → useful in finance & fraud<br>Guides risk assessment and modeling | Sensitive to sample size & outliers<br>Hard to interpret alone; use with skewness & visualization | Detect anomalies in transaction amounts or system latencies<br>Adjust thresholds in ML models for rare events |
+
   - Summary and Visualisation Tools
     - Five-number summary (min, Q1, median, Q3, max)
     - Boxplot
