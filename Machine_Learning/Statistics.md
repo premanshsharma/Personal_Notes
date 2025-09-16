@@ -122,6 +122,7 @@ graph TD
     
 # Descriptive statistics
 - Measure of Central Tendency
+  
 It's all about finding the centre value in a dataset.  
     - Mean
       | Type of Mean        | Formula                                  | Example                                                       | Strength / Use Case                                                                 | Weakness / Notes                                                  |
@@ -149,6 +150,8 @@ Example: [2, 2, 3, 4, 4, 5] → Modes = 2 and 4.
 Example: [2, 2, 3, 3, 4, 4, 5] → Modes = 2, 3, 4.
   - Measures of Dispersion (Spread)
 
+These metrics show how data values deviate from the centre.
+
 | Measure                           | Formula                                | Example                                                                                  | Advantages (easy words)                                              | Disadvantages (easy words)                                             |
 |-----------------------------------|----------------------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------|
 | **Range**                         | Range = Max(x) – Min(x)               | Salaries = [50k, 60k, 70k, 500k] → 500k – 50k = 450k                                     | Very simple, quick to calculate.                                     | Extremely sensitive to outliers; not reliable alone.                    |
@@ -158,6 +161,11 @@ Example: [2, 2, 3, 3, 4, 4, 5] → Modes = 2, 3, 4.
 | **Coefficient of Variation (CV)** | CV = σ / μ                     | Product A: Mean=1000, SD=50 → CV=0.05<br>Product B: Mean=200, SD=40 → CV=0.20            | Unit-free; good for comparing variability across different scales.   | Not meaningful if mean ≈ 0 or negative.                                        |
 
   - Measures of Position
+
+Measures of position tell you where a particular data point lies in a dataset relative to other values. 
+
+Interpolation is determining the unknown values that lie in between the known data points
+
     
 | Measure         | Formula / Definition                                  | Example                                                                                  | Advantages (easy words)                                              | Disadvantages (easy words)                                  |
 |-----------------|-------------------------------------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|
