@@ -158,11 +158,11 @@ Example: [2, 2, 3, 3, 4, 4, 5] → Modes = 2, 3, 4.
 | **Coefficient of Variation (CV)** | CV = σ / μ                     | Product A: Mean=1000, SD=50 → CV=0.05<br>Product B: Mean=200, SD=40 → CV=0.20            | Unit-free; good for comparing variability across different scales.   | Not meaningful if mean ≈ 0 or negative.                                        |
 
   - Measures of Position
-| Measure       | Formula / Definition                                  | Example                                                                                  | Advantages (easy words)                                              | Disadvantages (easy words)                                  |
-|---------------|-------------------------------------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|
+| Measure         | Formula / Definition                                  | Example                                                                                  | Advantages (easy words)                                              | Disadvantages (easy words)                                  |
+|-----------------|-------------------------------------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|
 | **Percentiles** | Pₖ = value below which k% of data falls            | Dataset = [10,20,30,40,50], 20th percentile (P20) → 10.8 (interpolated)                 | Shows relative position in data; easy to understand; good for comparisons. | Doesn’t show spread or range; may require interpolation. |
-| **Quartiles**  | Q1 = 25%, Q2 = 50% (median), Q3 = 75%              | Dataset = [5,7,8,12,15,18,20] → Q1=7, Q2=12, Q3=18; IQR = Q3-Q1 = 11                     | Divides data into 4 parts; useful for detecting outliers; robust to extreme values. | Ignores extreme values outside middle 50%.      |
-| **Deciles**    | Divide data into 10 equal parts                     | Dataset = [5,10,15,…50] → D1=9.5, D5≈27.5 (median)                                     | Finer segmentation than quartiles; good for ranking users.          | Can be overkill for small datasets; may need interpolation.      |
+| **Quartiles**   | Q1 = 25%, Q2 = 50% (median), Q3 = 75%              | Dataset = [5,7,8,12,15,18,20] → Q1=7, Q2=12, Q3=18; IQR = Q3-Q1 = 11                     | Divides data into 4 parts; useful for detecting outliers; robust to extreme values. | Ignores extreme values outside middle 50%.      |
+| **Deciles**     | Divide data into 10 equal parts                     | Dataset = [5,10,15,…50] → D1=9.5, D5≈27.5 (median)                                     | Finer segmentation than quartiles; good for ranking users.          | Can be overkill for small datasets; may need interpolation.      |
 
   - Measure of Shapes
     - Skewness (Symmetry of distribution)
