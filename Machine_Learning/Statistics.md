@@ -158,6 +158,7 @@ Example: [2, 2, 3, 3, 4, 4, 5] → Modes = 2, 3, 4.
 | **Coefficient of Variation (CV)** | CV = σ / μ                     | Product A: Mean=1000, SD=50 → CV=0.05<br>Product B: Mean=200, SD=40 → CV=0.20            | Unit-free; good for comparing variability across different scales.   | Not meaningful if mean ≈ 0 or negative.                                        |
 
   - Measures of Position
+    
 | Measure         | Formula / Definition                                  | Example                                                                                  | Advantages (easy words)                                              | Disadvantages (easy words)                                  |
 |-----------------|-------------------------------------------------------|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|
 | **Percentiles** | Pₖ = value below which k% of data falls            | Dataset = [10,20,30,40,50], 20th percentile (P20) → 10.8 (interpolated)                 | Shows relative position in data; easy to understand; good for comparisons. | Doesn’t show spread or range; may require interpolation.  |
