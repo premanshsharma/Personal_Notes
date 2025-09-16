@@ -1,3 +1,17 @@
+```mermaid
+graph TD;
+Statistics --> Descriptive Statistics;
+Statistics --> Inferential Statistics;
+Descriptive Statistics --> Central Tendency;
+Descriptive Statistics --> Spreadness;
+Central Tendency --> mean;
+Central Tendency --> meadian;
+Central Tendency --> mode;
+Spreadness --> Variance;
+Spreadness --> standard deviation;
+Spreadness --> Quartiles
+```
+
 # Mind Map
 - Descriptive statistics
   - Mean
