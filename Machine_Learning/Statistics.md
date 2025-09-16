@@ -37,45 +37,6 @@ graph TD
   S --> "Skewness (Symmetry of distribution)"
   S --> "Kurtosis (Peakedness/tailedness)"
 
-  SV --> "Five-number summary (min
-graph TD
-  DS["Descriptive Statistics"]
-
-  DS --> CT["Measure of Central Tendency"]
-  DS --> D["Measures of Dispersion (Spread)"]
-  DS --> P["Measures of Position"]
-  DS --> S["Measure of Shapes"]
-  DS --> SV["Summary and Visualisation Tools"]
-
-  CT --> Mean
-  CT --> Median
-  CT --> Mode
-
-  Mean --> Arithmetic
-  Mean --> Weighted
-  Mean --> Geometric
-  Mean --> Harmonic
-
-  Median --> "Even - Odd data"
-  Median --> "Robustness to outliers"
-
-  Mode --> "Uni-model"
-  Mode --> "Bi-model"
-  Mode --> "Multi-model"
-
-  D --> Range
-  D --> Variance
-  D --> "Standard Deviation"
-  D --> "Interquartile Range (IQR)"
-  D --> "Coefficient of variation"
-
-  P --> Percentiles
-  P --> Quartiles
-  P --> Deciles
-
-  S --> "Skewness (Symmetry of distribution)"
-  S --> "Kurtosis (Peakedness/tailedness)"
-
   SV --> "Five-number summary (min, Q1, median, Q3, max)
   SV -->  "Boxplot"
   SV -->  "Histogram"
