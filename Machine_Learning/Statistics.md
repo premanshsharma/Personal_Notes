@@ -1,26 +1,30 @@
 ```mermaid
 graph TD;
-Statistics --> Descriptive Statistics["Descriptive Statistics"];
-Statistics --> Inferential Statistics["Inferential Statistics"];
-Descriptive Statistics --> Central Tendency["Central Tendency"];
-Descriptive Statistics --> Spreadness["Spreadness"];
-Central Tendency --> mean["mean"];
-Central Tendency --> median["median"];
-Central Tendency --> mode["mode"];
-Spreadness --> Variance["Variance"];
-Spreadness --> standard deviation["standard deviation"];
-Spreadness --> Quartiles["Quartiles"]
+DS["Descriptive Statistics"] --> CT["Central Tendency"];
+DS --> SP["Spreadness"];
+
+CT --> mean["Mean"];
+CT --> median["Median"];
+CT --> mode["Mode"];
+
+SP --> variance["Variance"];
+SP --> sd["Standard Deviation"];
+SP --> percentiles["Percentiles"];
+SP --> quartiles["Quartiles"];
+
 ```
 
 # Mind Map
 - Descriptive statistics
-  - Mean
-  - Median
-  - Mode
-  - Variance
-  - Standard Deviation
-  - Percentiles
-  - Quartiles
+  - Central Tendency
+    - Mean
+    - Median
+    - Mode
+  - Spreadness
+    - Variance
+    - Standard Deviation
+    - Percentiles
+    - Quartiles
 - Inferential Statistics
   - Point estimation and confidence intervals
   - Hypothesis testing
