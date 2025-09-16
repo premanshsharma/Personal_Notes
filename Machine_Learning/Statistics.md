@@ -121,32 +121,46 @@ graph TD
       - Bayesian Inference (priors, posteriors, Bayes’ theorem)
     
 # Descriptive statistics
-## Mind Map
-- Mean
-- Median
-- Mode
-- Variance
-- Standard Deviation
-- Percentiles
-- Quartiles
-# Inferential Statistics
-- Inferential statistics involves using data from a sample to make generalizations or inferences about a population.
-- Unlike descriptive statistics, which only summarize the data, inferential statistics allow us to make predictions, test hypotheses, and estimate population parameters.
-- Key concepts in inferential statistics include point estimation, confidence intervals, hypothesis testing, and various statistical tests.
-## Mind Map
-- Point estimation and confidence intervals
-- Hypothesis testing
-  - Null vs Alternative Hypotheses
-  - Type 1 and Type 2 errors
-  - p-values
-  - Significance levels
-  - Power of a test
-  - Common tests:
-    - t-test (Independent, Paired, One-sample)
-    - ANOVA (One-way, Two-way)
-    - Chi-square test (Goodness-of-fit, Independence)
-    - F-test (Variance comparison)
-- Central Limit Theorem
-## Point estimation and confidence intervals
-- Point Estimation: A point estimate is a single value given as an estimate of an unknown population parameter. For example, the sample mean x' is used as a point estimate for the population mean μ.
-- Confidence Interval (CI): A confidence interval provides a range of values within which a population parameter is expected to lie, with a certain level of confidence. The interval is calculated from the sample data and typically expressed as:
+- Measure of Central Tendency
+It's all about finding the centre value in a dataset.  
+    - Mean
+      | Type of Mean       | Formula                                                                 | Example                                                                                           | Strength / Use Case                                                                                  | Weakness / Notes                                                                 |
+|--------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Arithmetic Mean** | \( AM = \frac{\sum x_i}{n} \)                                          | Salaries = [50k, 60k, 70k] → \( (50+60+70)/3 = 60k \)                                             | Simple average, easy to interpret.                                                                  | Sensitive to outliers. If one salary is 500k, the mean jumps. Interviewers may test skewed data. |
+| **Weighted Mean**   | \( WM = \frac{\sum w_i x_i}{\sum w_i} \)                              | GPA calculation → course grades weighted by credit hours.                                          | Useful when values have different importance (e.g., weighted revenue per customer).                   | Requires weights; misleading if weights are poorly chosen.                                        |
+| **Geometric Mean**  | \( GM = \big(\prod_{i=1}^{n} x_i \big)^{1/n} \)                       | Stock growth: 10%, 20%, 30% → GM ≈ 19.7%                                                          | Best for multiplicative processes (growth rates, ratios).                                            | Cannot handle negative values.                                                                    |
+| **Harmonic Mean**   | \( HM = \frac{n}{\sum \frac{1}{x_i}} \)                               | Speed: 60 km/h (1 hr), 30 km/h (1 hr) → HM = 40 km/h                                              | Good for rates (speed, efficiency). In ML, F1-score = harmonic mean of precision and recall.         | Overly influenced by very small values.                                                           |
+
+    - Median
+      - Even - Odd data
+        - Odd dataset: Middle element.
+Example: [3, 5, 8] → Median = 5.
+        - Even dataset: Average of two middle values.
+Example: [3, 5, 8, 10] → Median = (5+8)/2 = 6.5.
+      - Robustness to outliers
+        - Median is resistant to outliers/skewed data.
+        - Example: Salaries [50k, 60k, 500k] → Median = 60k (much better than mean = 203k).
+    - Mode
+      - Uni-model: One clear peak.
+Example: [2, 2, 3, 4, 5] → Mode = 2.
+      - Bi-model: Two peaks.
+Example: [2, 2, 3, 4, 4, 5] → Modes = 2 and 4.
+      - Multi-Model: More than two peaks.
+Example: [2, 2, 3, 3, 4, 4, 5] → Modes = 2, 3, 4.
+  - Measures of Dispersion (Spread)
+    - Range
+    - Variance
+    - Standard Deviation
+    - Interquaartile Raannge (IQR)
+    - Coefficient of variation
+  - Measures of Position
+    - Percentiles
+    - Quartiles
+    - Deciles
+  - Measure of Shapes
+    - Skewness (Symmetry of distribution)
+    - Kurtosis (Peakedness/tailedness)
+  - Summary and Visualisation Tools
+    - Five-number summary (min, Q1, median, Q3, max)
+    - Boxplot
+    - Histogram
