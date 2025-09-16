@@ -76,7 +76,9 @@ graph TD
   S --> "Skewness (Symmetry of distribution)"
   S --> "Kurtosis (Peakedness/tailedness)"
 
-  SV --> "Five-number summary (min
+  SV --> "Five-number summary (min, Q1, median, Q3, max)
+  SV -->  "Boxplot"
+  SV -->  "Histogram"
 
 ```
 
