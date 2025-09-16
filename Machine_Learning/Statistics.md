@@ -17,29 +17,29 @@ graph TD
   Mean --> Geometric
   Mean --> Harmonic
 
-  Median --> "Even Odd data"
-  Median --> "Robustness to outliers"
+  Median --> EvenOdd["Even Odd data"]
+  Median --> Robust["Robustness to outliers"]
 
-  Mode --> "Uni-model"
-  Mode --> "Bi-model"
-  Mode --> "Multi-model"
+  Mode --> Uni["Uni-model"]
+  Mode --> Bi["Bi-model"]
+  Mode --> Multi["Multi-model"]
 
   D --> Range
   D --> Variance
-  D --> "Standard Deviation"
-  D --> "Interquartile Range (IQR)"
-  D --> "Coefficient of variation"
+  D --> SD["Standard Deviation"]
+  D --> IQR["Interquartile Range (IQR)"]
+  D --> CV["Coefficient of variation"]
 
   P --> Percentiles
   P --> Quartiles
   P --> Deciles
 
-  S --> "Skewness (Symmetry of distribution)"
-  S --> "Kurtosis (Peakedness/tailedness)"
+  S --> Skew["Skewness (Symmetry of distribution)"]
+  S --> Kurt["Kurtosis (Peakedness/tailedness)"]
 
-  SV --> "Five-number summary (min, Q1, median, Q3, max)
-  SV -->  "Boxplot"
-  SV -->  "Histogram"
+  SV --> FNS["Five-number summary (min, Q1, median, Q3, max)"]
+  SV --> Box["Boxplot"]
+  SV --> Hist["Histogram"]
 
 ```
 
