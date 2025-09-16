@@ -1,15 +1,15 @@
 ```mermaid
 graph TD;
-Statistics --> Descriptive Statistics;
-Statistics --> Inferential Statistics;
-Descriptive Statistics --> Central Tendency;
-Descriptive Statistics --> Spreadness;
-Central Tendency --> mean;
-Central Tendency --> meadian;
-Central Tendency --> mode;
-Spreadness --> Variance;
-Spreadness --> standard deviation;
-Spreadness --> Quartiles
+Statistics --> Descriptive Statistics["Descriptive Statistics"];
+Statistics --> Inferential Statistics["Inferential Statistics"];
+Descriptive Statistics --> Central Tendency["Central Tendency"];
+Descriptive Statistics --> Spreadness["Spreadness"];
+Central Tendency --> mean["mean"];
+Central Tendency --> median["median"];
+Central Tendency --> mode["mode"];
+Spreadness --> Variance["Variance"];
+Spreadness --> standard deviation["standard deviation"];
+Spreadness --> Quartiles["Quartiles"]
 ```
 
 # Mind Map
